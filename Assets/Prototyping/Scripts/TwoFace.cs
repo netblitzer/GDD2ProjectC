@@ -9,7 +9,7 @@ public class TwoFace : MonoBehaviour {
     public bool chasing = false;
 
     public List<PathNode> Nodes;
-    public Vector3 viewDirection;
+    public Vector3 preferredDirection;
 
     private int curNode;
 
@@ -103,6 +103,10 @@ public class TwoFace : MonoBehaviour {
             if (distance > 2f) {
                 agent.SetDestination(Nodes[curNode].Position);
             } else {
+
+                Vector3 diff = gameObject.transform.forward - preferredDirection.normalized;
+
+                
 
             }
         }
