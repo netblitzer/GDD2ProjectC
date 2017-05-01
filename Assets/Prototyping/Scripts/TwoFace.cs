@@ -222,8 +222,8 @@ public class TwoFace : MonoBehaviour {
 				if(ang > 70 || ang == float.NaN) {
                     int walkMask = 1 << NavMesh.GetAreaFromName("Walkable");
                     NavMeshHit hit;
-                    agent.SamplePathPosition(walkMask, (pos + transform.forward * agent.speed), out hit);
-					agent.SetDestination(hit.position);
+                    //agent.SamplePathPosition(walkMask, (pos + transform.forward * agent.speed), out hit);
+					//agent.SetDestination(hit.position);
 				} else if (ang < 0) {
 					agent.velocity *= 0.95f;
 				}
