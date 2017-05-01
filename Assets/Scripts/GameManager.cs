@@ -1,14 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-    bool paused;
+    private bool paused;
+    public GameObject pausemenu;
 
 	// Use this for initialization
 	void Start () {
         paused = false;
+        pausemenu.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -17,22 +21,47 @@ public class GameManager : MonoBehaviour {
         {
             TogglePause();
         }
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            if(paused)
+            {
+                Application.Quit();
+                print("application quit");
+            }
+
+        }
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            if(paused)
+            {
+                RestartLevel();
+                print("Restarting level..");
+            }
+        }
 	}
 
-    void OnGUI()
+    void RestartLevel()
     {
-        if(paused)
-        {
-            //if it is paused, show pause menu
-            GUILayout.Label("Game is paused!");
-        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void TogglePause()
     {
         if (paused)
+        {
             paused = false;
-        if (!paused)
+            pausemenu.SetActive(false);
+            Time.timeScale = 1.0f;
+            print("should be unpaused");
+        }
+
+        else //if not paused, make it paused
+        {
             paused = true;
+            pausemenu.SetActive(true);
+            Time.timeScale = 0f;
+            print("should be paused");
+        }
+
     }
 }
