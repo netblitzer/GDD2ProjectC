@@ -1,0 +1,1753 @@
+fileFormatVersion: 2
+guid: ece77801f41dfc4409031d3ae573895c
+timeCreated: 1493642886
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body1
+    100002: Boot_L
+    100004: Boot_R
+    100006: COG
+    100008: Controls
+    100010: Eye01
+    100012: Eye02
+    100014: Eye03
+    100016: Eye04
+    100018: Global_Control
+    100020: Head1
+    100022: HeadTop
+    100024: ikHandle_L_Arm
+    100026: ikHandle_L_Leg
+    100028: ikHandle_R_Arm
+    100030: ikHandle_R_Leg
+    100032: IKHandles
+    100034: L_Ankle
+    100036: L_Arm_Control
+    100038: L_Clavicle
+    100040: L_Elbow
+    100042: L_Elbow_Control1
+    100044: L_Foot_Control2
+    100046: L_Heel
+    100048: L_Hip
+    100050: L_Index01
+    100052: L_Index02
+    100054: L_Index03
+    100056: L_Index04
+    100058: L_KNee
+    100060: L_Knee_Control
+    100062: L_Middle01
+    100064: L_Middle02
+    100066: L_Middle03
+    100068: L_Middle04
+    100070: L_Pinky01
+    100072: L_Pinky02
+    100074: L_Pinky03
+    100076: L_Pinky04
+    100078: L_Ring01
+    100080: L_Ring02
+    100082: L_Ring03
+    100084: L_Ring04
+    100086: L_Shoulder
+    100088: L_Sleeve
+    100090: L_SleeveEnd
+    100092: L_Thumb01
+    100094: L_Thumb02
+    100096: L_Thumb03
+    100098: L_Toe
+    100100: L_Wrist
+    100102: LL_Eye
+    100104: LLEye_End
+    100106: locator1
+    100108: locator2
+    100110: locator3
+    100112: LR_Eye
+    100114: LR_EyeEnd
+    100116: Neck01
+    100118: R_Ankle
+    100120: R_Arm_Control1
+    100122: R_Clavicle
+    100124: R_Elbow
+    100126: R_Elbow_Control1
+    100128: R_Foot_Control2
+    100130: R_Heel
+    100132: R_HIp
+    100134: R_Index01
+    100136: R_Index02
+    100138: R_Index03
+    100140: R_Index04
+    100142: R_Knee
+    100144: R_Knee_Control
+    100146: R_Middle01
+    100148: R_Middle02
+    100150: R_Middle03
+    100152: R_Middle04
+    100154: R_Pinky01
+    100156: R_Pinky02
+    100158: R_Pinky03
+    100160: R_Pinky04
+    100162: R_Ring01
+    100164: R_Ring02
+    100166: R_Ring03
+    100168: R_Ring04
+    100170: R_Shoulder
+    100172: R_Sleeve
+    100174: R_SleeveEnd
+    100176: R_Thumb01
+    100178: R_Thumb02
+    100180: R_Thumb03
+    100182: R_Toe
+    100184: R_Wrist
+    100186: RL_Eye
+    100188: RL_EyeEnd
+    100190: Robe
+    100192: RR_Eye
+    100194: RR_EyeEnd
+    100196: Spine02
+    100198: Spine03
+    100200: Spine04
+    100202: Spine05
+    100204: SpineRoot
+    100206: Suit1
+    100208: TwoFace
+    100210: //RootNode
+    400000: Body1
+    400002: Boot_L
+    400004: Boot_R
+    400006: COG
+    400008: Controls
+    400010: Eye01
+    400012: Eye02
+    400014: Eye03
+    400016: Eye04
+    400018: Global_Control
+    400020: Head1
+    400022: HeadTop
+    400024: ikHandle_L_Arm
+    400026: ikHandle_L_Leg
+    400028: ikHandle_R_Arm
+    400030: ikHandle_R_Leg
+    400032: IKHandles
+    400034: L_Ankle
+    400036: L_Arm_Control
+    400038: L_Clavicle
+    400040: L_Elbow
+    400042: L_Elbow_Control1
+    400044: L_Foot_Control2
+    400046: L_Heel
+    400048: L_Hip
+    400050: L_Index01
+    400052: L_Index02
+    400054: L_Index03
+    400056: L_Index04
+    400058: L_KNee
+    400060: L_Knee_Control
+    400062: L_Middle01
+    400064: L_Middle02
+    400066: L_Middle03
+    400068: L_Middle04
+    400070: L_Pinky01
+    400072: L_Pinky02
+    400074: L_Pinky03
+    400076: L_Pinky04
+    400078: L_Ring01
+    400080: L_Ring02
+    400082: L_Ring03
+    400084: L_Ring04
+    400086: L_Shoulder
+    400088: L_Sleeve
+    400090: L_SleeveEnd
+    400092: L_Thumb01
+    400094: L_Thumb02
+    400096: L_Thumb03
+    400098: L_Toe
+    400100: L_Wrist
+    400102: LL_Eye
+    400104: LLEye_End
+    400106: locator1
+    400108: locator2
+    400110: locator3
+    400112: LR_Eye
+    400114: LR_EyeEnd
+    400116: Neck01
+    400118: R_Ankle
+    400120: R_Arm_Control1
+    400122: R_Clavicle
+    400124: R_Elbow
+    400126: R_Elbow_Control1
+    400128: R_Foot_Control2
+    400130: R_Heel
+    400132: R_HIp
+    400134: R_Index01
+    400136: R_Index02
+    400138: R_Index03
+    400140: R_Index04
+    400142: R_Knee
+    400144: R_Knee_Control
+    400146: R_Middle01
+    400148: R_Middle02
+    400150: R_Middle03
+    400152: R_Middle04
+    400154: R_Pinky01
+    400156: R_Pinky02
+    400158: R_Pinky03
+    400160: R_Pinky04
+    400162: R_Ring01
+    400164: R_Ring02
+    400166: R_Ring03
+    400168: R_Ring04
+    400170: R_Shoulder
+    400172: R_Sleeve
+    400174: R_SleeveEnd
+    400176: R_Thumb01
+    400178: R_Thumb02
+    400180: R_Thumb03
+    400182: R_Toe
+    400184: R_Wrist
+    400186: RL_Eye
+    400188: RL_EyeEnd
+    400190: Robe
+    400192: RR_Eye
+    400194: RR_EyeEnd
+    400196: Spine02
+    400198: Spine03
+    400200: Spine04
+    400202: Spine05
+    400204: SpineRoot
+    400206: Suit1
+    400208: TwoFace
+    400210: //RootNode
+    4300000: Boot_L
+    4300002: Boot_R
+    4300004: Robe
+    4300006: Body1
+    4300008: Suit1
+    4300010: Eye01
+    4300012: Eye04
+    4300014: Eye03
+    4300016: Eye02
+    7400000: TwoFace_Walk
+    7400002: TwoFace_Run
+    7400004: TwoFace_JumpStart
+    7400006: TwoFace_JumpEnd
+    7400008: TwoFace_Fall
+    7400010: TwoFace_Idle
+    7400012: All
+    9500000: //RootNode
+    13700000: Body1
+    13700002: Boot_L
+    13700004: Boot_R
+    13700006: Eye01
+    13700008: Eye02
+    13700010: Eye03
+    13700012: Eye04
+    13700014: Robe
+    13700016: Suit1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TwoFace_Walk
+      takeName: Walk
+      firstFrame: 2
+      lastFrame: 77
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Controls
+        weight: 1
+      - path: Global_Control/Controls/COG
+        weight: 1
+      - path: Global_Control/Controls/COG/locator3
+        weight: 1
+      - path: Global_Control/Controls/L_Arm_Control
+        weight: 1
+      - path: Global_Control/Controls/L_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2/locator1
+        weight: 1
+      - path: Global_Control/Controls/L_Knee_Control
+        weight: 1
+      - path: Global_Control/Controls/R_Arm_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2/locator2
+        weight: 1
+      - path: Global_Control/Controls/R_Knee_Control
+        weight: 1
+      - path: Global_Control/IKHandles
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Leg
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Leg
+        weight: 1
+      - path: Global_Control/SpineRoot
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve/L_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03/L_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03/L_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03/L_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03/L_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02/L_Thumb03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/HeadTop
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye/LLEye_End
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye/LR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye/RL_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye/RR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve/R_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03/R_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03/R_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03/R_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03/R_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02/R_Thumb03
+        weight: 1
+      - path: TwoFace
+        weight: 1
+      - path: TwoFace/Body1
+        weight: 1
+      - path: TwoFace/Boot_L
+        weight: 1
+      - path: TwoFace/Boot_R
+        weight: 1
+      - path: TwoFace/Eye01
+        weight: 1
+      - path: TwoFace/Eye02
+        weight: 1
+      - path: TwoFace/Eye03
+        weight: 1
+      - path: TwoFace/Eye04
+        weight: 1
+      - path: TwoFace/Robe
+        weight: 1
+      - path: TwoFace/Suit1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TwoFace_Run
+      takeName: Run
+      firstFrame: 80
+      lastFrame: 141
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Controls
+        weight: 1
+      - path: Global_Control/Controls/COG
+        weight: 1
+      - path: Global_Control/Controls/COG/locator3
+        weight: 1
+      - path: Global_Control/Controls/L_Arm_Control
+        weight: 1
+      - path: Global_Control/Controls/L_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2/locator1
+        weight: 1
+      - path: Global_Control/Controls/L_Knee_Control
+        weight: 1
+      - path: Global_Control/Controls/R_Arm_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2/locator2
+        weight: 1
+      - path: Global_Control/Controls/R_Knee_Control
+        weight: 1
+      - path: Global_Control/IKHandles
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Leg
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Leg
+        weight: 1
+      - path: Global_Control/SpineRoot
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve/L_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03/L_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03/L_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03/L_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03/L_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02/L_Thumb03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/HeadTop
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye/LLEye_End
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye/LR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye/RL_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye/RR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve/R_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03/R_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03/R_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03/R_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03/R_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02/R_Thumb03
+        weight: 1
+      - path: TwoFace
+        weight: 1
+      - path: TwoFace/Body1
+        weight: 1
+      - path: TwoFace/Boot_L
+        weight: 1
+      - path: TwoFace/Boot_R
+        weight: 1
+      - path: TwoFace/Eye01
+        weight: 1
+      - path: TwoFace/Eye02
+        weight: 1
+      - path: TwoFace/Eye03
+        weight: 1
+      - path: TwoFace/Eye04
+        weight: 1
+      - path: TwoFace/Robe
+        weight: 1
+      - path: TwoFace/Suit1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TwoFace_JumpStart
+      takeName: JumpStart
+      firstFrame: 143
+      lastFrame: 185
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Controls
+        weight: 1
+      - path: Global_Control/Controls/COG
+        weight: 1
+      - path: Global_Control/Controls/COG/locator3
+        weight: 1
+      - path: Global_Control/Controls/L_Arm_Control
+        weight: 1
+      - path: Global_Control/Controls/L_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2/locator1
+        weight: 1
+      - path: Global_Control/Controls/L_Knee_Control
+        weight: 1
+      - path: Global_Control/Controls/R_Arm_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2/locator2
+        weight: 1
+      - path: Global_Control/Controls/R_Knee_Control
+        weight: 1
+      - path: Global_Control/IKHandles
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Leg
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Leg
+        weight: 1
+      - path: Global_Control/SpineRoot
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve/L_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03/L_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03/L_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03/L_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03/L_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02/L_Thumb03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/HeadTop
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye/LLEye_End
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye/LR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye/RL_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye/RR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve/R_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03/R_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03/R_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03/R_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03/R_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02/R_Thumb03
+        weight: 1
+      - path: TwoFace
+        weight: 1
+      - path: TwoFace/Body1
+        weight: 1
+      - path: TwoFace/Boot_L
+        weight: 1
+      - path: TwoFace/Boot_R
+        weight: 1
+      - path: TwoFace/Eye01
+        weight: 1
+      - path: TwoFace/Eye02
+        weight: 1
+      - path: TwoFace/Eye03
+        weight: 1
+      - path: TwoFace/Eye04
+        weight: 1
+      - path: TwoFace/Robe
+        weight: 1
+      - path: TwoFace/Suit1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TwoFace_JumpEnd
+      takeName: JumpEnd
+      firstFrame: 185
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Controls
+        weight: 1
+      - path: Global_Control/Controls/COG
+        weight: 1
+      - path: Global_Control/Controls/COG/locator3
+        weight: 1
+      - path: Global_Control/Controls/L_Arm_Control
+        weight: 1
+      - path: Global_Control/Controls/L_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2/locator1
+        weight: 1
+      - path: Global_Control/Controls/L_Knee_Control
+        weight: 1
+      - path: Global_Control/Controls/R_Arm_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2/locator2
+        weight: 1
+      - path: Global_Control/Controls/R_Knee_Control
+        weight: 1
+      - path: Global_Control/IKHandles
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Leg
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Leg
+        weight: 1
+      - path: Global_Control/SpineRoot
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve/L_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03/L_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03/L_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03/L_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03/L_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02/L_Thumb03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/HeadTop
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye/LLEye_End
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye/LR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye/RL_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye/RR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve/R_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03/R_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03/R_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03/R_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03/R_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02/R_Thumb03
+        weight: 1
+      - path: TwoFace
+        weight: 1
+      - path: TwoFace/Body1
+        weight: 1
+      - path: TwoFace/Boot_L
+        weight: 1
+      - path: TwoFace/Boot_R
+        weight: 1
+      - path: TwoFace/Eye01
+        weight: 1
+      - path: TwoFace/Eye02
+        weight: 1
+      - path: TwoFace/Eye03
+        weight: 1
+      - path: TwoFace/Eye04
+        weight: 1
+      - path: TwoFace/Robe
+        weight: 1
+      - path: TwoFace/Suit1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TwoFace_Fall
+      takeName: Fall
+      firstFrame: 210
+      lastFrame: 275
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Controls
+        weight: 1
+      - path: Global_Control/Controls/COG
+        weight: 1
+      - path: Global_Control/Controls/COG/locator3
+        weight: 1
+      - path: Global_Control/Controls/L_Arm_Control
+        weight: 1
+      - path: Global_Control/Controls/L_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2/locator1
+        weight: 1
+      - path: Global_Control/Controls/L_Knee_Control
+        weight: 1
+      - path: Global_Control/Controls/R_Arm_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2/locator2
+        weight: 1
+      - path: Global_Control/Controls/R_Knee_Control
+        weight: 1
+      - path: Global_Control/IKHandles
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Leg
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Leg
+        weight: 1
+      - path: Global_Control/SpineRoot
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve/L_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03/L_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03/L_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03/L_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03/L_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02/L_Thumb03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/HeadTop
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye/LLEye_End
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye/LR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye/RL_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye/RR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve/R_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03/R_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03/R_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03/R_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03/R_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02/R_Thumb03
+        weight: 1
+      - path: TwoFace
+        weight: 1
+      - path: TwoFace/Body1
+        weight: 1
+      - path: TwoFace/Boot_L
+        weight: 1
+      - path: TwoFace/Boot_R
+        weight: 1
+      - path: TwoFace/Eye01
+        weight: 1
+      - path: TwoFace/Eye02
+        weight: 1
+      - path: TwoFace/Eye03
+        weight: 1
+      - path: TwoFace/Eye04
+        weight: 1
+      - path: TwoFace/Robe
+        weight: 1
+      - path: TwoFace/Suit1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TwoFace_Idle
+      takeName: Idle
+      firstFrame: 278
+      lastFrame: 455
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Controls
+        weight: 1
+      - path: Global_Control/Controls/COG
+        weight: 1
+      - path: Global_Control/Controls/COG/locator3
+        weight: 1
+      - path: Global_Control/Controls/L_Arm_Control
+        weight: 1
+      - path: Global_Control/Controls/L_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/L_Foot_Control2/locator1
+        weight: 1
+      - path: Global_Control/Controls/L_Knee_Control
+        weight: 1
+      - path: Global_Control/Controls/R_Arm_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Elbow_Control1
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2
+        weight: 1
+      - path: Global_Control/Controls/R_Foot_Control2/locator2
+        weight: 1
+      - path: Global_Control/Controls/R_Knee_Control
+        weight: 1
+      - path: Global_Control/IKHandles
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_L_Leg
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Arm
+        weight: 1
+      - path: Global_Control/IKHandles/ikHandle_R_Leg
+        weight: 1
+      - path: Global_Control/SpineRoot
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/L_Hip/L_KNee/L_Ankle/L_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Heel
+        weight: 1
+      - path: Global_Control/SpineRoot/R_HIp/R_Knee/R_Ankle/R_Toe
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Sleeve/L_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Index01/L_Index02/L_Index03/L_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Middle01/L_Middle02/L_Middle03/L_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Pinky01/L_Pinky02/L_Pinky03/L_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Ring01/L_Ring02/L_Ring03/L_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Thumb01/L_Thumb02/L_Thumb03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/HeadTop
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LL_Eye/LLEye_End
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/LR_Eye/LR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RL_Eye/RL_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/Neck01/Head1/RR_Eye/RR_EyeEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Sleeve/R_SleeveEnd
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Index01/R_Index02/R_Index03/R_Index04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Middle01/R_Middle02/R_Middle03/R_Middle04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Pinky01/R_Pinky02/R_Pinky03/R_Pinky04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Ring01/R_Ring02/R_Ring03/R_Ring04
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02
+        weight: 1
+      - path: Global_Control/SpineRoot/Spine02/Spine03/Spine04/Spine05/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Thumb01/R_Thumb02/R_Thumb03
+        weight: 1
+      - path: TwoFace
+        weight: 1
+      - path: TwoFace/Body1
+        weight: 1
+      - path: TwoFace/Boot_L
+        weight: 1
+      - path: TwoFace/Boot_R
+        weight: 1
+      - path: TwoFace/Eye01
+        weight: 1
+      - path: TwoFace/Eye02
+        weight: 1
+      - path: TwoFace/Eye03
+        weight: 1
+      - path: TwoFace/Eye04
+        weight: 1
+      - path: TwoFace/Robe
+        weight: 1
+      - path: TwoFace/Suit1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
