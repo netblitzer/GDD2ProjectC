@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: 1bdf72ec22ff6f84fb8f47fbe06a562a
+timeCreated: 1493635193
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ElbowControl_L
+    100002: ElbowControl_R
+    100004: EyeConrtol_Bottom_L
+    100006: EyeConrtol_Bottom_R
+    100008: EyeConrtol_L
+    100010: EyeConrtol_R
+    100012: EyeControls
+    100014: Finger1Base_L
+    100016: Finger1Base_R
+    100018: Finger1End_L
+    100020: Finger1End_R
+    100022: Finger1Mid_L
+    100024: Finger1Mid_R
+    100026: Finger2Base_L
+    100028: Finger2Base_R
+    100030: Finger2End_L
+    100032: Finger2End_R
+    100034: Finger2Mid_L
+    100036: Finger2Mid_R
+    100038: Finger3Base_L
+    100040: Finger3Base_R
+    100042: Finger3End_L
+    100044: Finger3End_R
+    100046: Finger3Mid_L
+    100048: Finger3Mid_R
+    100050: Finger4Base_L
+    100052: Finger4Base_R
+    100054: Finger4End_L
+    100056: Finger4End_R
+    100058: Finger4Mid_L
+    100060: Finger4Mid_R
+    100062: FingerControls_L
+    100064: FingerControls_R
+    100066: FootControl_L
+    100068: FootControl_R
+    100070: HeadControl
+    100072: HipsControl
+    100074: IK_Arm_L
+    100076: IK_Arm_R
+    100078: IK_Foot_L
+    100080: IK_Foot_R
+    100082: IK_Hand_L
+    100084: IK_Hand_R
+    100086: IK_Leg_L
+    100088: IK_Leg_R
+    100090: JT_Ankle_L
+    100092: JT_Ankle_R
+    100094: JT_Base
+    100096: JT_Clavicle_L
+    100098: JT_Clavicle_R
+    100100: JT_Elbow_L
+    100102: JT_Elbow_R
+    100104: JT_Eye_L
+    100106: JT_Eye_R
+    100108: JT_Eyelid_L
+    100110: JT_Eyelid_R
+    100112: JT_EyelidBottom_L
+    100114: JT_EyelidBottom_R
+    100116: JT_Finger1Base_L
+    100118: JT_Finger1Base_R
+    100120: JT_Finger1End_L
+    100122: JT_Finger1End_R
+    100124: JT_Finger1Mid_L
+    100126: JT_Finger1Mid_R
+    100128: JT_Finger1Tip_L
+    100130: JT_Finger1Tip_R
+    100132: JT_Finger2Base_L
+    100134: JT_Finger2Base_R
+    100136: JT_Finger2End_L
+    100138: JT_Finger2End_R
+    100140: JT_Finger2Mid_L
+    100142: JT_Finger2Mid_R
+    100144: JT_Finger2Tip_L
+    100146: JT_Finger2Tip_R
+    100148: JT_Finger3Base_L
+    100150: JT_Finger3Base_R
+    100152: JT_Finger3End_L
+    100154: JT_Finger3End_R
+    100156: JT_Finger3Mid_L
+    100158: JT_Finger3Mid_R
+    100160: JT_Finger3Tip_L
+    100162: JT_Finger3Tip_R
+    100164: JT_Finger4Base_L
+    100166: JT_Finger4Base_R
+    100168: JT_Finger4End_L
+    100170: JT_Finger4End_R
+    100172: JT_Finger4Mid_L
+    100174: JT_Finger4Mid_R
+    100176: JT_Finger4Tip_L
+    100178: JT_Finger4Tip_R
+    100180: JT_Head
+    100182: JT_HeadTop
+    100184: JT_Hip_L
+    100186: JT_Hip_R
+    100188: JT_Knee_L
+    100190: JT_Knee_R
+    100192: JT_Neck
+    100194: JT_Palm_L
+    100196: JT_Palm_R
+    100198: JT_Shoulder_L
+    100200: JT_Shoulder_R
+    100202: JT_Spine1
+    100204: JT_Spine2
+    100206: JT_Spine3
+    100208: JT_ThumbBase_L
+    100210: JT_ThumbBase_R
+    100212: JT_ThumbMid_L
+    100214: JT_ThumbMid_R
+    100216: JT_ThumbTip_L
+    100218: JT_ThumbTip_R
+    100220: JT_Toe_L
+    100222: JT_Toe_R
+    100224: JT_ToeTip_L
+    100226: JT_ToeTip_R
+    100228: JT_Wrist_L
+    100230: JT_Wrist_R
+    100232: KneeControl_L
+    100234: KneeControl_R
+    100236: ShoulderControl_L
+    100238: ShoulderControl_R
+    100240: SpineControl_1
+    100242: SpineControl_2
+    100244: SpineControl_3
+    100246: ThumbBase_L
+    100248: ThumbBase_R
+    100250: ThumbMid_L
+    100252: ThumbMid_R
+    100254: ToeBall_L
+    100256: ToeBall_R
+    100258: TotalControl
+    100260: WristContol_L
+    100262: WristContol_R
+    100264: Yeti
+    100266: //RootNode
+    400000: ElbowControl_L
+    400002: ElbowControl_R
+    400004: EyeConrtol_Bottom_L
+    400006: EyeConrtol_Bottom_R
+    400008: EyeConrtol_L
+    400010: EyeConrtol_R
+    400012: EyeControls
+    400014: Finger1Base_L
+    400016: Finger1Base_R
+    400018: Finger1End_L
+    400020: Finger1End_R
+    400022: Finger1Mid_L
+    400024: Finger1Mid_R
+    400026: Finger2Base_L
+    400028: Finger2Base_R
+    400030: Finger2End_L
+    400032: Finger2End_R
+    400034: Finger2Mid_L
+    400036: Finger2Mid_R
+    400038: Finger3Base_L
+    400040: Finger3Base_R
+    400042: Finger3End_L
+    400044: Finger3End_R
+    400046: Finger3Mid_L
+    400048: Finger3Mid_R
+    400050: Finger4Base_L
+    400052: Finger4Base_R
+    400054: Finger4End_L
+    400056: Finger4End_R
+    400058: Finger4Mid_L
+    400060: Finger4Mid_R
+    400062: FingerControls_L
+    400064: FingerControls_R
+    400066: FootControl_L
+    400068: FootControl_R
+    400070: HeadControl
+    400072: HipsControl
+    400074: IK_Arm_L
+    400076: IK_Arm_R
+    400078: IK_Foot_L
+    400080: IK_Foot_R
+    400082: IK_Hand_L
+    400084: IK_Hand_R
+    400086: IK_Leg_L
+    400088: IK_Leg_R
+    400090: JT_Ankle_L
+    400092: JT_Ankle_R
+    400094: JT_Base
+    400096: JT_Clavicle_L
+    400098: JT_Clavicle_R
+    400100: JT_Elbow_L
+    400102: JT_Elbow_R
+    400104: JT_Eye_L
+    400106: JT_Eye_R
+    400108: JT_Eyelid_L
+    400110: JT_Eyelid_R
+    400112: JT_EyelidBottom_L
+    400114: JT_EyelidBottom_R
+    400116: JT_Finger1Base_L
+    400118: JT_Finger1Base_R
+    400120: JT_Finger1End_L
+    400122: JT_Finger1End_R
+    400124: JT_Finger1Mid_L
+    400126: JT_Finger1Mid_R
+    400128: JT_Finger1Tip_L
+    400130: JT_Finger1Tip_R
+    400132: JT_Finger2Base_L
+    400134: JT_Finger2Base_R
+    400136: JT_Finger2End_L
+    400138: JT_Finger2End_R
+    400140: JT_Finger2Mid_L
+    400142: JT_Finger2Mid_R
+    400144: JT_Finger2Tip_L
+    400146: JT_Finger2Tip_R
+    400148: JT_Finger3Base_L
+    400150: JT_Finger3Base_R
+    400152: JT_Finger3End_L
+    400154: JT_Finger3End_R
+    400156: JT_Finger3Mid_L
+    400158: JT_Finger3Mid_R
+    400160: JT_Finger3Tip_L
+    400162: JT_Finger3Tip_R
+    400164: JT_Finger4Base_L
+    400166: JT_Finger4Base_R
+    400168: JT_Finger4End_L
+    400170: JT_Finger4End_R
+    400172: JT_Finger4Mid_L
+    400174: JT_Finger4Mid_R
+    400176: JT_Finger4Tip_L
+    400178: JT_Finger4Tip_R
+    400180: JT_Head
+    400182: JT_HeadTop
+    400184: JT_Hip_L
+    400186: JT_Hip_R
+    400188: JT_Knee_L
+    400190: JT_Knee_R
+    400192: JT_Neck
+    400194: JT_Palm_L
+    400196: JT_Palm_R
+    400198: JT_Shoulder_L
+    400200: JT_Shoulder_R
+    400202: JT_Spine1
+    400204: JT_Spine2
+    400206: JT_Spine3
+    400208: JT_ThumbBase_L
+    400210: JT_ThumbBase_R
+    400212: JT_ThumbMid_L
+    400214: JT_ThumbMid_R
+    400216: JT_ThumbTip_L
+    400218: JT_ThumbTip_R
+    400220: JT_Toe_L
+    400222: JT_Toe_R
+    400224: JT_ToeTip_L
+    400226: JT_ToeTip_R
+    400228: JT_Wrist_L
+    400230: JT_Wrist_R
+    400232: KneeControl_L
+    400234: KneeControl_R
+    400236: ShoulderControl_L
+    400238: ShoulderControl_R
+    400240: SpineControl_1
+    400242: SpineControl_2
+    400244: SpineControl_3
+    400246: ThumbBase_L
+    400248: ThumbBase_R
+    400250: ThumbMid_L
+    400252: ThumbMid_R
+    400254: ToeBall_L
+    400256: ToeBall_R
+    400258: TotalControl
+    400260: WristContol_L
+    400262: WristContol_R
+    400264: Yeti
+    400266: //RootNode
+    4300000: Yeti
+    7400000: Yeti_Idle
+    7400002: Yeti_Walk
+    7400004: Yeti_Run
+    7400006: Yeti_Throw
+    9500000: //RootNode
+    13700000: Yeti
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Yeti_Idle
+      takeName: All
+      firstFrame: 25
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: JT_Base
+        weight: 1
+      - path: JT_Base/JT_Hip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L/JT_ToeTip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R/JT_ToeTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L/JT_Finger1Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L/JT_Finger2Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L/JT_Finger3Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L/JT_Finger4Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L/JT_ThumbTip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R/JT_Finger1Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R/JT_Finger2Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R/JT_Finger3Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R/JT_Finger4Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R/JT_ThumbTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_HeadTop
+        weight: 1
+      - path: TotalControl
+        weight: 1
+      - path: TotalControl/FootControl_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Foot_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Leg_L
+        weight: 1
+      - path: TotalControl/FootControl_L/ToeBall_L
+        weight: 1
+      - path: TotalControl/FootControl_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Foot_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Leg_R
+        weight: 1
+      - path: TotalControl/FootControl_R/ToeBall_R
+        weight: 1
+      - path: TotalControl/HipsControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L/Finger1End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L/Finger2End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L/Finger3End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L/Finger4End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L/ThumbMid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Arm_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Hand_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R/Finger1End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R/Finger2End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R/Finger3End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R/Finger4End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R/ThumbMid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Arm_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Hand_R
+        weight: 1
+      - path: TotalControl/KneeControl_L
+        weight: 1
+      - path: TotalControl/KneeControl_R
+        weight: 1
+      - path: Yeti
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Yeti_Walk
+      takeName: All
+      firstFrame: 227
+      lastFrame: 304
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: JT_Base
+        weight: 1
+      - path: JT_Base/JT_Hip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L/JT_ToeTip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R/JT_ToeTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L/JT_Finger1Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L/JT_Finger2Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L/JT_Finger3Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L/JT_Finger4Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L/JT_ThumbTip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R/JT_Finger1Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R/JT_Finger2Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R/JT_Finger3Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R/JT_Finger4Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R/JT_ThumbTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_HeadTop
+        weight: 1
+      - path: TotalControl
+        weight: 1
+      - path: TotalControl/FootControl_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Foot_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Leg_L
+        weight: 1
+      - path: TotalControl/FootControl_L/ToeBall_L
+        weight: 1
+      - path: TotalControl/FootControl_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Foot_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Leg_R
+        weight: 1
+      - path: TotalControl/FootControl_R/ToeBall_R
+        weight: 1
+      - path: TotalControl/HipsControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L/Finger1End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L/Finger2End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L/Finger3End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L/Finger4End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L/ThumbMid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Arm_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Hand_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R/Finger1End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R/Finger2End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R/Finger3End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R/Finger4End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R/ThumbMid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Arm_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Hand_R
+        weight: 1
+      - path: TotalControl/KneeControl_L
+        weight: 1
+      - path: TotalControl/KneeControl_R
+        weight: 1
+      - path: Yeti
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Yeti_Run
+      takeName: All
+      firstFrame: 307
+      lastFrame: 352
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: JT_Base
+        weight: 1
+      - path: JT_Base/JT_Hip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L/JT_ToeTip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R/JT_ToeTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L/JT_Finger1Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L/JT_Finger2Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L/JT_Finger3Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L/JT_Finger4Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L/JT_ThumbTip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R/JT_Finger1Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R/JT_Finger2Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R/JT_Finger3Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R/JT_Finger4Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R/JT_ThumbTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_HeadTop
+        weight: 1
+      - path: TotalControl
+        weight: 1
+      - path: TotalControl/FootControl_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Foot_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Leg_L
+        weight: 1
+      - path: TotalControl/FootControl_L/ToeBall_L
+        weight: 1
+      - path: TotalControl/FootControl_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Foot_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Leg_R
+        weight: 1
+      - path: TotalControl/FootControl_R/ToeBall_R
+        weight: 1
+      - path: TotalControl/HipsControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L/Finger1End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L/Finger2End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L/Finger3End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L/Finger4End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L/ThumbMid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Arm_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Hand_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R/Finger1End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R/Finger2End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R/Finger3End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R/Finger4End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R/ThumbMid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Arm_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Hand_R
+        weight: 1
+      - path: TotalControl/KneeControl_L
+        weight: 1
+      - path: TotalControl/KneeControl_R
+        weight: 1
+      - path: Yeti
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Yeti_Throw
+      takeName: All
+      firstFrame: 356
+      lastFrame: 389
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: JT_Base
+        weight: 1
+      - path: JT_Base/JT_Hip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L
+        weight: 1
+      - path: JT_Base/JT_Hip_L/JT_Knee_L/JT_Ankle_L/JT_Toe_L/JT_ToeTip_L
+        weight: 1
+      - path: JT_Base/JT_Hip_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R
+        weight: 1
+      - path: JT_Base/JT_Hip_R/JT_Knee_R/JT_Ankle_R/JT_Toe_R/JT_ToeTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger1Base_L/JT_Finger1Mid_L/JT_Finger1End_L/JT_Finger1Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger2Base_L/JT_Finger2Mid_L/JT_Finger2End_L/JT_Finger2Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger3Base_L/JT_Finger3Mid_L/JT_Finger3End_L/JT_Finger3Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_Finger4Base_L/JT_Finger4Mid_L/JT_Finger4End_L/JT_Finger4Tip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_L/JT_Shoulder_L/JT_Elbow_L/JT_Wrist_L/JT_Palm_L/JT_ThumbBase_L/JT_ThumbMid_L/JT_ThumbTip_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger1Base_R/JT_Finger1Mid_R/JT_Finger1End_R/JT_Finger1Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger2Base_R/JT_Finger2Mid_R/JT_Finger2End_R/JT_Finger2Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger3Base_R/JT_Finger3Mid_R/JT_Finger3End_R/JT_Finger3Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_Finger4Base_R/JT_Finger4Mid_R/JT_Finger4End_R/JT_Finger4Tip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Clavicle_R/JT_Shoulder_R/JT_Elbow_R/JT_Wrist_R/JT_Palm_R/JT_ThumbBase_R/JT_ThumbMid_R/JT_ThumbTip_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eye_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_Eyelid_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_L
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_EyelidBottom_R
+        weight: 1
+      - path: JT_Base/JT_Spine1/JT_Spine2/JT_Spine3/JT_Neck/JT_Head/JT_HeadTop
+        weight: 1
+      - path: TotalControl
+        weight: 1
+      - path: TotalControl/FootControl_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Foot_L
+        weight: 1
+      - path: TotalControl/FootControl_L/IK_Leg_L
+        weight: 1
+      - path: TotalControl/FootControl_L/ToeBall_L
+        weight: 1
+      - path: TotalControl/FootControl_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Foot_R
+        weight: 1
+      - path: TotalControl/FootControl_R/IK_Leg_R
+        weight: 1
+      - path: TotalControl/FootControl_R/ToeBall_R
+        weight: 1
+      - path: TotalControl/HipsControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ElbowControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_Bottom_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/HeadControl/EyeControls/EyeConrtol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/ShoulderControl_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger1Base_L/Finger1Mid_L/Finger1End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger2Base_L/Finger2Mid_L/Finger2End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger3Base_L/Finger3Mid_L/Finger3End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/Finger4Base_L/Finger4Mid_L/Finger4End_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/FingerControls_L/ThumbBase_L/ThumbMid_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Arm_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_L/IK_Hand_L
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger1Base_R/Finger1Mid_R/Finger1End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger2Base_R/Finger2Mid_R/Finger2End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger3Base_R/Finger3Mid_R/Finger3End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/Finger4Base_R/Finger4Mid_R/Finger4End_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/FingerControls_R/ThumbBase_R/ThumbMid_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Arm_R
+        weight: 1
+      - path: TotalControl/HipsControl/SpineControl_1/SpineControl_2/SpineControl_3/WristContol_R/IK_Hand_R
+        weight: 1
+      - path: TotalControl/KneeControl_L
+        weight: 1
+      - path: TotalControl/KneeControl_R
+        weight: 1
+      - path: Yeti
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
