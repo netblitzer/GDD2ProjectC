@@ -13,9 +13,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
-        
+        private bool yetiHeld;
+
         private void Start()
         {
+            yetiHeld = false;
             // get the transform of the main camera
             if (Camera.main != null)
             {
@@ -38,6 +40,28 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            }
+
+            if (!yetiHeld)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    // pick up yeti
+
+                }
+                if (Input.GetMouseButtonDown(1))
+                {
+                    // drop yeti
+
+                }
+            }
+            else
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    // throw yeti
+
+                }
             }
         }
 
