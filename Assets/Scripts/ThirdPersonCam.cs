@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ThirdPersonCam : MonoBehaviour {
 
-	private const float Y_ANGLE_MIN = 5.0f;
-	private const float Y_ANGLE_MAX = 35.0f;
-	private const float X_ANGLE_MIN = -20.0f;
-	private const float X_ANGLE_MAX = 20.0f;
+	private const float Y_ANGLE_MIN = -15.0f;
+	private const float Y_ANGLE_MAX = 30.0f;
+	private const float X_ANGLE_MIN = -30.0f;
+	private const float X_ANGLE_MAX = 30.0f;
 
 	// lookAt is player transform
 	public Transform lookAt;
@@ -17,7 +17,7 @@ public class ThirdPersonCam : MonoBehaviour {
 
     public Texture2D crosshair;
 
-	private float dist = 7.5f;
+	private float dist = 5.0f;
 	private float currentX = 0.0f;
 	private float currentY = 0.0f;
     //	private float sensitivityX = 4.0f;
@@ -39,19 +39,29 @@ public class ThirdPersonCam : MonoBehaviour {
 	
 	private void LateUpdate () {
 		Vector3 dir = new Vector3(0,0,-dist);
-		Quaternion rot = Quaternion.Euler(currentY, currentX, 0);
+        Quaternion rot;
 
         Vector3 targetPos = lookAt.position;
-        targetPos.y += 2.5f;
-        
-        camTrans.position = targetPos + lookAt.rotation * rot * dir;
-		camTrans.LookAt(lookAt.position);
+        targetPos.y += 3.0f;
+
+        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+        {
+            rot = Quaternion.Euler(currentY, currentX, 0);
+            camTrans.position = targetPos + lookAt.rotation * rot * dir;
+        }
+        else
+        {
+            rot = Quaternion.Euler(currentY, 0, 0);
+            camTrans.position = targetPos + lookAt.rotation * rot * dir;
+        }
+
+        camTrans.LookAt(lookAt.position);
 	}
 
     private void OnGUI()
     {
-        float xMin = (Screen.width / 2) - (crosshair.width / 2);
-        float yMin = (Screen.height * 1 / 3) - (crosshair.height / 2);
-        GUI.DrawTexture(new Rect(xMin, yMin, crosshair.width, crosshair.height), crosshair);
+        float xMouse = (Input.mousePosition.x) - (crosshair.width / 2);
+        float yMouse = (Input.mousePosition.y) + (crosshair.height / 2);
+        GUI.DrawTexture(new Rect(xMouse, Screen.height - yMouse, crosshair.width, crosshair.height), crosshair);
     }
 }
