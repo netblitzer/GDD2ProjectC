@@ -32,8 +32,6 @@ public class TwoFace : MonoBehaviour {
     public float reaquireTime = 2f;
 	public float minChaseTime = 1f;
 
-    public float viewDistance = 5f;
-
     private float nodeWaiting = 0f;
     private float reaquiring = 0f;
 	private float chaseTimer = 0f;
@@ -115,9 +113,9 @@ public class TwoFace : MonoBehaviour {
 
 					chaseTimer = minChaseTime;
 
-					agent.SetDestination (transform.position + transform.forward * agent.speed);
+                    agent.SetDestination(transform.position + transform.forward * 2);
 
-				} else {
+                } else {
 					agent.velocity *= 0.95f;
 				}
 			} else {
@@ -129,14 +127,14 @@ public class TwoFace : MonoBehaviour {
 					Vector3 rotateDir = Vector3.RotateTowards (transform.forward, lastSeenDirection, chaseTurnSpeed * Time.deltaTime, 0.0f);
 					transform.rotation = Quaternion.LookRotation (rotateDir);
 
-					agent.SetDestination (transform.position + transform.forward * agent.speed);
+                    agent.SetDestination(transform.position + transform.forward * 2);
 
-					chaseTimer = minChaseTime;
+                    chaseTimer = minChaseTime;
 
 				} else if (chaseTimer >= 0) {
-					agent.SetDestination (transform.position + transform.forward * agent.speed);
+                    agent.SetDestination(transform.position + transform.forward * 2);
 
-					chaseTimer -= Time.deltaTime;
+                    chaseTimer -= Time.deltaTime;
 					if (chaseTimer < 0) {
 						reaquiring = reaquireTime;
 
@@ -220,6 +218,9 @@ public class TwoFace : MonoBehaviour {
 				//Debug.Log (ang);
 
 				if(ang > 70 || ang == float.NaN) {
+
+                    agent.SetDestination(transform.position + transform.forward * 2);
+
                     int walkMask = 1 << NavMesh.GetAreaFromName("Walkable");
                     NavMeshHit hit;
                     //agent.SamplePathPosition(walkMask, (pos + transform.forward * agent.speed), out hit);
@@ -248,8 +249,8 @@ public class TwoFace : MonoBehaviour {
 
                 float ang = findAng(Nodes[curNode].gameObject);
 
-                agent.SetDestination(transform.position + transform.forward * agent.speed);
-			} else {
+                agent.SetDestination(transform.position + transform.forward * 2);
+            } else {
 				agent.velocity *= 0.95f;
 
 				transform.rotation = Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, preferredDirection, turnSpeed * Time.deltaTime, 0.0f));

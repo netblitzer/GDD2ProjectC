@@ -17,7 +17,7 @@ public class ViewCone : MonoBehaviour {
             Vector3 dir = (_other.transform.position - parent.transform.position).normalized;
             Ray check = new Ray(parent.transform.position, dir);
             RaycastHit hit;
-            Physics.Raycast(check, out hit, parent.viewDistance);
+            Physics.Raycast(check, out hit, float.MaxValue);
 
             if (hit.collider == _other) {
                 if (parent.target) {
