@@ -12,7 +12,9 @@ public class ViewCone : MonoBehaviour {
 
 	void OnTriggerStay (Collider _other) {
 
-		if (_other.tag == "Yeti" || _other.tag == "Player") {
+        Debug.Log("Collider hit");
+
+        if (_other.tag == "Yeti" || _other.tag == "Player") {
 
             Vector3 dir = (_other.transform.position - parent.transform.position).normalized;
             Ray check = new Ray(parent.transform.position, dir);
@@ -32,7 +34,13 @@ public class ViewCone : MonoBehaviour {
                 else {
                     parent.target = _other.gameObject;
                 }
-            }
+			} else if (parent.target) {
+
+				// lost sight because it went behind cover
+				if (_other == parent.target) {
+					parent.target = null;
+				}
+			}
 		}
 	}
 

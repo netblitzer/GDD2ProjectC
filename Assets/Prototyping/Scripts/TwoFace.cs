@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class TwoFace : MonoBehaviour {
 
     public GameObject target = null;
-    public GameObject testTarget = null;
     public bool chasing = false;
 
     public List<PathNode> Nodes;
@@ -25,7 +24,6 @@ public class TwoFace : MonoBehaviour {
     public float chaseTurnSpeed = 0.25f;
 
 	private NavMeshAgent agent;
-    public NavMesh mesh;
     private Vector3 pos;
 
     public float nodeWaitTime = 1f;
