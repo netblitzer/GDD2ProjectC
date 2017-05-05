@@ -50,27 +50,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             
 
 			// send input and other state parameters to the animator
-			UpdateAnimator(move);
+			UpdateAnimator();
 		}
 
 
-		void UpdateAnimator(Vector3 move)
+		void UpdateAnimator()
 		{
 			// update the animator parameters
-			m_Animator.SetFloat("Speed", m_ForwardAmount);
-            // , 0.1f, Time.deltaTime
+			m_Animator.SetFloat("Speed", m_ForwardAmount, 0.1f, Time.deltaTime);
+
+            m_Animator.ResetTrigger("Throwing");
 
             // the anim speed multiplier allows the overall speed of walking/running to be tweaked in the inspector,
             // which affects the movement speed because of the root motion.
-            if (move.magnitude > 0)
-			{
-				m_Animator.speed = m_AnimSpeedMultiplier;
-			}
-			else
-			{
-				// don't use that while airborne
-				m_Animator.speed = 1;
-			}
+			m_Animator.speed = m_AnimSpeedMultiplier;
 		}
 
 		void ApplyExtraTurnRotation()
@@ -88,7 +81,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			if (Time.deltaTime > 0)
 			{
 				Vector3 v = (m_Animator.deltaPosition * m_MoveSpeedMultiplier) / Time.deltaTime;
-
+                //Debug.Log(v);
+                Debug.Log(m_Animator.deltaPosition);
 				// we preserve the existing y part of the current velocity.
 				v.y = m_Rigidbody.velocity.y;
 				m_Rigidbody.velocity = v;
