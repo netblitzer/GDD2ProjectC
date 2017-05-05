@@ -42,7 +42,7 @@ public class ThirdPersonCam : MonoBehaviour {
         Quaternion rot;
 
         Vector3 targetPos = lookAt.position;
-        targetPos.y += 3.0f;
+        targetPos.y += 2.5f;
 
         if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
         {

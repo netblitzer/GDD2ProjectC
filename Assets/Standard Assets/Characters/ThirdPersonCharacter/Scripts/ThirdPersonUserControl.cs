@@ -11,7 +11,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
-        private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
         private bool yetiHeld;
 
@@ -37,22 +36,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
-            if (!m_Jump)
-            {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
 
             if (!yetiHeld)
             {
                 if (Input.GetMouseButtonDown(0))
                 {
                     // pick up yeti
-
-                }
-                if (Input.GetMouseButtonDown(1))
-                {
-                    // drop yeti
-
+                    Debug.Log("picked up");
+                    yetiHeld = true;
                 }
             }
             else
@@ -60,7 +51,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 if (Input.GetMouseButtonDown(0))
                 {
                     // throw yeti
+                    Debug.Log("thrown");
+                    yetiHeld = false;
+                    m_Character.Throw();
+                }
 
+                if (Input.GetMouseButtonDown(1))
+                {
+                    // drop yeti
+                    Debug.Log("dropped");
+                    yetiHeld = false;
                 }
             }
         }
@@ -72,7 +72,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
-            bool crouch = Input.GetKey(KeyCode.C);
 
             // calculate move direction to pass to character
             if (m_Cam != null)
@@ -93,8 +92,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 #endif
 
             // pass all parameters to the character control script
-            m_Character.Move(m_Move, crouch, m_Jump);
-            m_Jump = false;
+            m_Character.Move(m_Move);
         }
     }
 }
