@@ -1,10 +1,10 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
-//    [RequireComponent(typeof (ThirdPersonCharacter))]
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(CapsuleCollider))]
     [RequireComponent(typeof(Animator))]
@@ -21,12 +21,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         Vector3 m_CapsuleCenter;
         CapsuleCollider m_Capsule;
 
-//        private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 move;
         private Vector3 distance;
 
         private bool yetiHeld;
+		private GameObject otherYeti;
 
         private void Start()
         {
@@ -42,7 +42,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 
-            distance = new Vector3(0.2f, 0.0f, 0.0f);
+            distance = new Vector3(0.1f, 0.0f, 0.0f);
         }
 
 
@@ -54,7 +54,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 if (Input.GetMouseButtonDown(0))
                 {
                     // pick up yeti
-                    yetiHeld = true;
+					GameObject[] Yetis = GameObject.FindGameObjectsWithTag("Yeti");
+					
+					foreach(GameObject Yeti in Yetis){
+						if(Vector3.Distance(Yeti.transform.position, transform.position) < 5){
+							otherYeti = Yeti;
+							Vector3 temp = transform.position;
+							temp.y += 2.0f;
+							Yeti.transform.position = temp;
+							
+							yetiHeld = true;
+							break;
+						}
+					}
                 }
             }
             else
@@ -82,15 +94,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 transform.Rotate(Vector3.up * 3f);
             }
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) && !yetiHeld)
             {
                 transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f);
             }
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S) && !yetiHeld)
             {
                 transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 2;
             }
         }
+		
+		private void YetiArc(GameObject yeti){
+			
+		}
 
 
         // Fixed update is called in sync with physics
