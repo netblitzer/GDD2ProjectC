@@ -60,8 +60,8 @@ public class ThirdPersonCam : MonoBehaviour {
 
     private void OnGUI()
     {
-        float xMouse = (Input.mousePosition.x) - (crosshair.width / 2);
-        float yMouse = (Input.mousePosition.y) + (crosshair.height / 2);
-        GUI.DrawTexture(new Rect(xMouse, Screen.height - yMouse, crosshair.width, crosshair.height), crosshair);
+        //float xMouse = (Input.mousePosition.x) - (crosshair.width / 2);
+        //float yMouse = (Input.mousePosition.y) + (crosshair.height / 2);
+        //GUI.DrawTexture(new Rect(xMouse, Screen.height - yMouse, crosshair.width, crosshair.height), crosshair);
     }
 }
