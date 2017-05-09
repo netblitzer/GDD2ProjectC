@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -10,27 +9,32 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     [RequireComponent(typeof(Animator))]
     public class ThirdPersonUserControl : MonoBehaviour
     {
-        [SerializeField] float m_MoveSpeedMultiplier = 1f;
         [SerializeField] float m_AnimSpeedMultiplier = 1f;
 
         Rigidbody m_Rigidbody;
         Animator m_Animator;
-        float m_ForwardAmount;
-        Vector3 m_GroundNormal;
         float m_CapsuleHeight;
         Vector3 m_CapsuleCenter;
         CapsuleCollider m_Capsule;
 
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
-        private Vector3 move;
         private Vector3 distance;
 
         private bool yetiHeld;
+        private bool threw;
 		private GameObject otherYeti;
+        
+        private float animStart;
+        private float animCurrent;
+
+        private Vector3 start;
+        private Vector3 end;
+        private Vector3 mid;
 
         private void Start()
         {
             yetiHeld = false;
+            threw = false;
 
             m_Cam = Camera.main.transform;
 
@@ -48,10 +52,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
+            m_Animator.speed = m_AnimSpeedMultiplier;
+            m_Animator.ResetTrigger("Throwing");
+            m_Animator.SetFloat("Speed", 0.0f);
 
             if (!yetiHeld)
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && !threw)
                 {
                     // pick up yeti
 					GameObject[] Yetis = GameObject.FindGameObjectsWithTag("Yeti");
@@ -60,7 +67,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 						if(Vector3.Distance(Yeti.transform.position, transform.position) < 5){
 							otherYeti = Yeti;
 							Vector3 temp = transform.position;
-							temp.y += 2.0f;
+							temp.y += 2.3f;
 							Yeti.transform.position = temp;
 							
 							yetiHeld = true;
@@ -81,8 +88,24 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 if (Input.GetMouseButtonDown(1))
                 {
                     // drop yeti
+                    Vector3 temp = new Vector3(2.0f, 0.0f, 0.0f);
+                    temp = Vector3.RotateTowards(temp, transform.forward, (float)(2.0 * Math.PI), 0.25f);
+                    otherYeti.transform.position = transform.position - temp;
+
                     yetiHeld = false;
                 }
+            }
+            if (threw)
+            {
+                animCurrent = Time.time;
+
+                float pos = (animCurrent - animStart) / 2.0f;
+                if (pos > 1)
+                {
+                    threw = false;
+                }
+                
+                otherYeti.transform.position = Vector3.Lerp(Vector3.Lerp(start, mid, pos), Vector3.Lerp(mid, end, pos), pos);
             }
 
             
@@ -96,52 +119,29 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
             if (Input.GetKey(KeyCode.W) && !yetiHeld)
             {
-                transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f);
+                transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f) / 3;
+                m_Animator.SetFloat("Speed", 0.1f);
             }
             if (Input.GetKey(KeyCode.S) && !yetiHeld)
             {
-                transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 2;
+                transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 5;
+                m_Animator.SetFloat("Speed", -0.5f);
             }
-        }
-		
-		private void YetiArc(GameObject yeti){
-			
-		}
-
-
-        // Fixed update is called in sync with physics
-        private void FixedUpdate()
-        {
-            // read inputs
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
-            
-            move = v * Vector3.Scale(transform.forward, new Vector3(1, 0, 1)).normalized + h * m_Cam.right;
-            
-    
-            if (move.magnitude > 1f) move.Normalize();
-            move = transform.InverseTransformDirection(move);
-            move = Vector3.ProjectOnPlane(move, m_GroundNormal);
-            m_ForwardAmount = Mathf.Abs(move.z);
-
-
-            UpdateAnimator();
-        }
-
-        void UpdateAnimator()
-        {
-            // update the animator parameters
-            m_Animator.SetFloat("Speed", m_ForwardAmount, 0.1f, Time.deltaTime);
-
-            m_Animator.ResetTrigger("Throwing");
-
-            // the anim speed multiplier allows the overall speed of walking/running to be tweaked in the inspector,
-            // which affects the movement speed because of the root motion.
-            m_Animator.speed = m_AnimSpeedMultiplier;
         }
 
         public void Throw()
         {
+            threw = true;
+            animStart = Time.time;
+
+            float dist = m_Cam.transform.position.y;
+            dist = 20 - dist * 3;
+
+            start = otherYeti.transform.position;
+            end = transform.position + Vector3.RotateTowards(new Vector3(0.0f, 0.0f, dist), transform.forward, (float)(2.0 * Math.PI), 1.0f);
+            mid = (start + end) / 2;
+
+            mid.y = 4.0f;
             m_Animator.SetTrigger("Throwing");
         }
     }
