@@ -105,8 +105,21 @@ public class YetiFlocker : MonoBehaviour {
 
 		pos = gameObject.transform.position;
 
+        Vector3 playerPos = Player.transform.position;
 
-		if (found) {
+        if (Vector3.Distance(pos, playerPos) < 15)
+        {
+            found = true;
+            if (pos.y < 2.0f)
+            {
+                following = true;
+            } else
+            {
+                following = false;
+            }
+        }
+
+        if (found) {
 
 			if (following) {
 
