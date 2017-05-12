@@ -11,7 +11,7 @@ public class StartButton : MonoBehaviour {
 
     void OnMouseUp()
     {
-        Application.LoadLevel(0);
+        Application.LoadLevel("Level Test");
         print("startbuttonhit");
     }
 

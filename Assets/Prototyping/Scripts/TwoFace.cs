@@ -90,7 +90,6 @@ public class TwoFace : MonoBehaviour {
 
 		pos = gameObject.transform.position;
 
-
 		if (target || chasing) {
 
 			if (!chasing) {
@@ -111,7 +110,7 @@ public class TwoFace : MonoBehaviour {
 
 					chaseTimer = minChaseTime;
 
-                    agent.SetDestination(transform.position + transform.forward * 2);
+                    agent.SetDestination(transform.position + transform.forward * 4);
 
                 } else {
 					agent.velocity *= 0.95f;
@@ -125,12 +124,12 @@ public class TwoFace : MonoBehaviour {
 					Vector3 rotateDir = Vector3.RotateTowards (transform.forward, lastSeenDirection, chaseTurnSpeed * Time.deltaTime, 0.0f);
 					transform.rotation = Quaternion.LookRotation (rotateDir);
 
-                    agent.SetDestination(transform.position + transform.forward * 2);
+                    agent.SetDestination(transform.position + transform.forward * 4);
 
                     chaseTimer = minChaseTime;
 
 				} else if (chaseTimer >= 0) {
-                    agent.SetDestination(transform.position + transform.forward * 2);
+                    agent.SetDestination(transform.position + transform.forward * 4);
 
                     chaseTimer -= Time.deltaTime;
 					if (chaseTimer < 0) {
@@ -247,7 +246,7 @@ public class TwoFace : MonoBehaviour {
 
                 float ang = findAng(Nodes[curNode].gameObject);
 
-                agent.SetDestination(transform.position + transform.forward * 2);
+                agent.SetDestination(transform.position + transform.forward * 4);
             } else {
 				agent.velocity *= 0.95f;
 

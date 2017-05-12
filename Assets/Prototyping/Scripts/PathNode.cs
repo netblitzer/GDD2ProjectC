@@ -8,6 +8,7 @@ public class PathNode : MonoBehaviour {
 
     void Start () {
         Position = gameObject.transform.position;
+		Position.y -= 0.5f;
     }
 
     void OnDrawGizmos () {
