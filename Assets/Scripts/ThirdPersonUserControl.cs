@@ -99,7 +99,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 animCurrent = Time.time;
 
-                float pos = (animCurrent - animStart) / 2.0f;
+                float pos = (animCurrent - animStart) / 1.0f;
                 if (pos > 1)
                 {
                     threw = false;
@@ -141,7 +141,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             end = transform.position + Vector3.RotateTowards(new Vector3(0.0f, 0.0f, dist), transform.forward, (float)(2.0 * Math.PI), 1.0f);
             mid = (start + end) / 2;
 
-            mid.y = 4.0f;
+            mid.y = 6.0f;
             m_Animator.SetTrigger("Throwing");
         }
     }
