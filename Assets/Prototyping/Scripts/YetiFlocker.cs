@@ -110,12 +110,14 @@ public class YetiFlocker : MonoBehaviour {
         if (Vector3.Distance(pos, playerPos) < 15)
         {
             found = true;
-            if (pos.y < 2.0f)
+            if (pos.y < 1.5f)
             {
                 following = true;
+                agent.enabled = true;
             } else
             {
                 following = false;
+                agent.enabled = false;
             }
         }
 

@@ -67,7 +67,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 						if(Vector3.Distance(Yeti.transform.position, transform.position) < 5){
 							otherYeti = Yeti;
 							Vector3 temp = transform.position;
-							temp.y += 2.3f;
+							temp.y += 3.0f;
 							Yeti.transform.position = temp;
 							
 							yetiHeld = true;
