@@ -51,7 +51,7 @@ public class ThirdPersonCam : MonoBehaviour {
         Quaternion rot;
 
         Vector3 targetPos = lookAt.position;
-        targetPos.y += 2.5f;
+        targetPos.y += 4.0f;
 
         rot = Quaternion.Euler(currentY, currentX, 0);
         camTrans.position = targetPos + lookAt.rotation * rot * dir;
