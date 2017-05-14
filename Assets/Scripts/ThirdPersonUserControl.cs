@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -67,8 +68,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 						if(Vector3.Distance(Yeti.transform.position, transform.position) < 5){
 							otherYeti = Yeti;
 							Vector3 temp = transform.position;
-							temp.y += 3.0f;
-							Yeti.transform.position = temp;
+							temp.y += 4.2f;
+							otherYeti.transform.position = temp;
+                            otherYeti.GetComponent<NavMeshAgent>().enabled = false;
+                            otherYeti.GetComponent<YetiFlocker>().enabled = false;
 							
 							yetiHeld = true;
 							break;
@@ -78,6 +81,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
             else
             {
+
+                Vector3 temp = transform.position;
+                temp.y += 4.2f;
+                otherYeti.transform.position = temp;
+
                 if (Input.GetMouseButtonDown(0))
                 {
                     // throw yeti
@@ -88,21 +96,27 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 if (Input.GetMouseButtonDown(1))
                 {
                     // drop yeti
-                    Vector3 temp = new Vector3(2.0f, 0.0f, 0.0f);
+                    temp = new Vector3(2.0f, 0.0f, 0.0f);
                     temp = Vector3.RotateTowards(temp, transform.forward, (float)(2.0 * Math.PI), 0.25f);
                     otherYeti.transform.position = transform.position - temp;
+
+                    otherYeti.GetComponent<NavMeshAgent>().enabled = true;
+                    otherYeti.GetComponent<YetiFlocker>().enabled = true;
 
                     yetiHeld = false;
                 }
             }
+
             if (threw)
             {
                 animCurrent = Time.time;
 
-                float pos = (animCurrent - animStart) / 1.0f;
-                if (pos > 1)
+                float pos = (animCurrent - animStart) / 0.5f;
+                if (pos >= 1)
                 {
                     threw = false;
+                    otherYeti.GetComponent<NavMeshAgent>().enabled = true;
+                    otherYeti.GetComponent<YetiFlocker>().enabled = true;
                 }
                 
                 otherYeti.transform.position = Vector3.Lerp(Vector3.Lerp(start, mid, pos), Vector3.Lerp(mid, end, pos), pos);
@@ -135,7 +149,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             animStart = Time.time;
 
             float dist = m_Cam.transform.position.y;
-            dist = 20 - dist * 3;
+            dist = 35 - dist * 2;
 
             start = otherYeti.transform.position;
             end = transform.position + Vector3.RotateTowards(new Vector3(0.0f, 0.0f, dist), transform.forward, (float)(2.0 * Math.PI), 1.0f);

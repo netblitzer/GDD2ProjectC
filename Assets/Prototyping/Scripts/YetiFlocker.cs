@@ -107,21 +107,17 @@ public class YetiFlocker : MonoBehaviour {
 
         Vector3 playerPos = Player.transform.position;
 
-        if (Vector3.Distance(pos, playerPos) < 15)
+        if (Vector3.Distance(pos, playerPos) < 10)
         {
             found = true;
-            if (pos.y < 1.5f)
-            {
-                following = true;
-                agent.enabled = true;
-            } else
-            {
-                following = false;
-                agent.enabled = false;
-            }
+            following = true;
+        }
+        else 
+        {
+            following = false;
         }
 
-        if (found) {
+        if (found && agent.isActiveAndEnabled) {
 
 			if (following) {
 
@@ -144,7 +140,7 @@ public class YetiFlocker : MonoBehaviour {
 				fleeUpdate ();
 			}
 
-		} else {
+		} else if (agent.isActiveAndEnabled) {
 			fleeUpdate ();
 		}
 
