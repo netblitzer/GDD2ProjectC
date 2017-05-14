@@ -21,7 +21,7 @@ public class ElevatorStartScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(elevator == true && transform.position != endingposition)
+		if(elevator == true & transform.position != endingposition)
         {
             float speed = 1.0F;
             float distCovered = (Time.time - startTime) * speed;
@@ -29,6 +29,11 @@ public class ElevatorStartScript : MonoBehaviour {
             Vector3 lerp = Vector3.Lerp(startingposition, endingposition, fracJourney);
             transform.position = lerp;
             print("supposed to be moving");
+        }
+        else
+        {
+            transform.GetChild(2).gameObject.GetComponent<Collider>().enabled = false;
+            transform.GetChild(2).gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
 	}
 }
