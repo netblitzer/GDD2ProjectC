@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+
 public class YetiFlocker : MonoBehaviour {
 
 	public GameObject Player;
 
-	public float speed = 7;
+    public float speed = 7;
 	public float turnSpeed = 2;
 	public float followDistance = 3;
 	public float fleeDistance = 5;
@@ -79,6 +80,7 @@ public class YetiFlocker : MonoBehaviour {
                 transform.rotation = Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, dir, turnSpeed * Time.deltaTime, 0.0f));
 
                 agent.SetDestination(transform.position + transform.forward * 2);
+                
             }
             else {
 
