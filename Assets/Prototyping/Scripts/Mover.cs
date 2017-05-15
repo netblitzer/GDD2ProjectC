@@ -17,7 +17,9 @@ public class Mover : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(lastPos != transform.position)
+        m_Animator.SetFloat("Speed", 0.0f);
+
+		if(Vector3.Distance(lastPos, transform.position) > 0.01f)
         {
             m_Animator.SetFloat("Speed", 0.1f);
         }
