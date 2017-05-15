@@ -34,6 +34,7 @@ public class ElevatorStartScript : MonoBehaviour {
         {
             transform.GetChild(2).gameObject.GetComponent<Collider>().enabled = false;
             transform.GetChild(2).gameObject.GetComponent<MeshRenderer>().enabled = false;
+            transform.GetChild(7).gameObject.GetComponent<Camera>().enabled = false;
         }
 	}
 }

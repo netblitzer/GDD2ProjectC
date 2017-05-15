@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour {
     void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        TogglePause();
     }
 
     void TogglePause()
