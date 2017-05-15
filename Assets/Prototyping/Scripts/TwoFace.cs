@@ -80,10 +80,6 @@ public class TwoFace : MonoBehaviour {
 
         return Mathf.Rad2Deg * (Mathf.Acos(Vector3.Dot(_dir.normalized, gameObject.transform.forward)) - Mathf.PI / 2);
     }
-
-	public void findTarget() {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -256,5 +252,20 @@ public class TwoFace : MonoBehaviour {
         else {
 
         }
+	}
+
+	void OnCollisionEnter (Collision _col) {
+
+		GameObject _other = _col.gameObject;
+
+		if (_other.tag == "Yeti") {
+			// Yeti death
+			_other.GetComponent<YetiFlocker>().kill ();
+			target = null;
+
+		} else if (_other.tag == "Player") {
+			// Player death
+
+		}
 	}
 }

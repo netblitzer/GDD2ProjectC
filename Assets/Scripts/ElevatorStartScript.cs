@@ -28,7 +28,6 @@ public class ElevatorStartScript : MonoBehaviour {
             float fracJourney = distCovered / journeyLength;
             Vector3 lerp = Vector3.Lerp(startingposition, endingposition, fracJourney);
             transform.position = lerp;
-            print("supposed to be moving");
         }
         else
         {

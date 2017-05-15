@@ -17,13 +17,15 @@ public class YetiFlocker : MonoBehaviour {
 
 	public bool found = false;
 	public bool following = false;
-
 	public bool fleeing = false;
+	public bool cowering = false;
+	public bool dying = false;
+
 	private GameObject fleeTarget;
     private int fleeCheck = 0;
 	private GameObject[] enemies;
-	public bool cowering = false;
-	public float cowerTimeCounter = 0;
+	private float cowerTimeCounter = 0;
+	private float deathTimer = 0;
 
 	private NavMeshAgent agent;
 	private Vector3 pos;
@@ -103,46 +105,64 @@ public class YetiFlocker : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		pos = gameObject.transform.position;
+		if (!dying) {
 
-        Vector3 playerPos = Player.transform.position;
+			pos = gameObject.transform.position;
 
-        if (Vector3.Distance(pos, playerPos) < 10)
-        {
-            found = true;
-            following = true;
-        }
-        else 
-        {
-            following = false;
-        }
+			Vector3 playerPos = Player.transform.position;
 
-        if (found && agent.isActiveAndEnabled) {
-
-			if (following) {
-
-				float distance = Vector3.Distance (Player.transform.position, pos);
-
-				if (distance > trueFollowDistance) {
-
-					Vector3 dir = ((Player.transform.position - Player.transform.forward) - pos).normalized;
-					transform.rotation = Quaternion.LookRotation (Vector3.RotateTowards (transform.forward, dir, turnSpeed * Time.deltaTime, 0.0f));
-
-					agent.SetDestination (transform.position + transform.forward * 2);
-				} else {
-
-					Vector3 dir = (Player.transform.position - pos).normalized;
-					transform.rotation = Quaternion.LookRotation (Vector3.RotateTowards (transform.forward, dir, turnSpeed * Time.deltaTime, 0.0f));
-
-					agent.velocity *= 0.95f;
-				}
+			if (Vector3.Distance (pos, playerPos) < 10) {
+				found = true;
+				following = true;
 			} else {
-				fleeUpdate ();
+				following = false;
 			}
 
-		} else if (agent.isActiveAndEnabled) {
-			fleeUpdate ();
+			if (found && agent.isActiveAndEnabled) {
+
+				if (following) {
+
+					float distance = Vector3.Distance (Player.transform.position, pos);
+
+					if (distance > trueFollowDistance) {
+
+						Vector3 dir = ((Player.transform.position - Player.transform.forward) - pos).normalized;
+						transform.rotation = Quaternion.LookRotation (Vector3.RotateTowards (transform.forward, dir, turnSpeed * Time.deltaTime, 0.0f));
+
+						agent.SetDestination (transform.position + transform.forward * 2);
+					} else {
+
+						Vector3 dir = (Player.transform.position - pos).normalized;
+						transform.rotation = Quaternion.LookRotation (Vector3.RotateTowards (transform.forward, dir, turnSpeed * Time.deltaTime, 0.0f));
+
+						agent.velocity *= 0.95f;
+					}
+				} else {
+					fleeUpdate ();
+				}
+
+			} else if (agent.isActiveAndEnabled) {
+				fleeUpdate ();
+			}
+		} else {
+
+			// let all the particles fade
+			if (deathTimer > 1f) {
+				Destroy (gameObject);
+			}
+
+			deathTimer += Time.deltaTime;
 		}
 
+	}
+
+	public void kill () {
+		if (deathTimer == 0) {
+			gameObject.GetComponentsInChildren<SkinnedMeshRenderer> ()[0].enabled = false;
+			gameObject.GetComponent<ParticleSystem> ().Play ();
+			gameObject.GetComponent<CapsuleCollider> ().enabled = false;
+			agent.enabled = false;
+			dying = true;
+		}
 	}
 }

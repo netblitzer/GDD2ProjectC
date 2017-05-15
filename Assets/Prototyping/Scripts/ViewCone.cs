@@ -12,8 +12,6 @@ public class ViewCone : MonoBehaviour {
 
 	void OnTriggerStay (Collider _other) {
 
-        Debug.Log("Collider hit");
-
         if (_other.tag == "Yeti" || _other.tag == "Player") {
 
             Vector3 dir = (_other.transform.position - parent.transform.position).normalized;
