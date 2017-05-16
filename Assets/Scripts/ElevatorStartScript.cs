@@ -17,6 +17,7 @@ public class ElevatorStartScript : MonoBehaviour {
         endingposition = new Vector3(0.05f, -0.25f, 34.41f);
         startTime = Time.time;
         journeyLength = Vector3.Distance(startingposition, endingposition);
+        GameObject.FindGameObjectWithTag("SideCamera").GetComponent<Camera>().enabled = false;
     }
 	
 	// Update is called once per frame
@@ -34,6 +35,7 @@ public class ElevatorStartScript : MonoBehaviour {
             transform.GetChild(2).gameObject.GetComponent<Collider>().enabled = false;
             transform.GetChild(2).gameObject.GetComponent<MeshRenderer>().enabled = false;
             transform.GetChild(7).gameObject.GetComponent<Camera>().enabled = false;
+            GameObject.FindGameObjectWithTag("SideCamera").GetComponent<Camera>().enabled = true;
         }
 	}
 }
