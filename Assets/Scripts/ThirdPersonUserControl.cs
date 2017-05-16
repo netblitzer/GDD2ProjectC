@@ -133,13 +133,27 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
             if (Input.GetKey(KeyCode.W) && !yetiHeld)
             {
-                transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f) / 3;
-                m_Animator.SetFloat("Speed", 0.1f);
+                if (transform.eulerAngles.y == 270)
+                {
+                    transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f) / 3;
+                }
+                else
+                {
+                    transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f) / 3;
+                    m_Animator.SetFloat("Speed", 0.1f);
+                }
             }
             if (Input.GetKey(KeyCode.S) && !yetiHeld)
             {
-                transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 5;
-                m_Animator.SetFloat("Speed", -0.5f);
+                if (transform.eulerAngles.y == 270)
+                {
+                    transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 5;
+                }
+                else
+                {
+                    transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 5;
+                    m_Animator.SetFloat("Speed", -0.5f);
+                }
             }
         }
 
