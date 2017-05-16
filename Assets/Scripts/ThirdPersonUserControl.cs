@@ -122,6 +122,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 					if (yetiRollTimer > 1) {
 						threw = false;
+                        otherYeti.GetComponent<Rigidbody> ().velocity = new Vector3(0,0,0);
 						otherYeti.GetComponent<NavMeshAgent> ().enabled = true;
 						otherYeti.GetComponent<YetiFlocker> ().enabled = true;
 						otherYeti.GetComponent<Rigidbody> ().useGravity = false;
@@ -183,10 +184,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             mid.y = 6.0f;
             m_Animator.SetTrigger("Throwing");
-			_other.GetComponent<Rigidbody> ().AddForce (gameObject.transform.forward * dist, ForceMode.Impulse);
+			_other.GetComponent<Rigidbody> ().AddForce (gameObject.transform.forward * throwForce, ForceMode.Impulse);
 			_other.GetComponent<Rigidbody> ().useGravity = true;
-			otherYeti.GetComponent<CapsuleCollider> ().enabled = false;
-			otherYeti.GetComponent<SphereCollider> ().enabled = true;
+			_other.GetComponent<CapsuleCollider> ().enabled = false;
+			_other.GetComponent<SphereCollider> ().enabled = true;
         }
     }
 }
