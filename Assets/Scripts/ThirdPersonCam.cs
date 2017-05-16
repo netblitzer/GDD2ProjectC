@@ -28,6 +28,7 @@ public class ThirdPersonCam : MonoBehaviour {
 	private void Start () {
 		camTrans = transform;
 		cam = Camera.main;
+        cam.cullingMask &= ~(1 << LayerMask.NameToLayer("secret"));
         mousePos.x = (Screen.width / 2) / Screen.width;
         mousePos.y = (Screen.height / 2) / Screen.height;
     }

@@ -87,7 +87,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
 
                 Vector3 temp = transform.position;
-                temp.y += 6f;
+                temp.y += 6.4f;
                 otherYeti.transform.position = temp;
                 
                 if (Input.GetMouseButtonDown(0))

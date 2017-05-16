@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour {
             paused = false;
             pausemenu.SetActive(false);
             Time.timeScale = 1.0f;
+            GameObject.FindGameObjectWithTag("SideCamera").GetComponent<Camera>().depth = 1;
             print("should be unpaused");
         }
 
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour {
             paused = true;
             pausemenu.SetActive(true);
             Time.timeScale = 0f;
+            GameObject.FindGameObjectWithTag("SideCamera").GetComponent<Camera>().depth = -3;
             print("should be paused");
         }
 
