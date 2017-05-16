@@ -36,7 +36,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             yetiHeld = false;
             threw = false;
-
+            
             m_Cam = Camera.main.transform;
 
             m_Animator = GetComponent<Animator>();
@@ -85,7 +85,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 Vector3 temp = transform.position;
                 temp.y += 4.2f;
                 otherYeti.transform.position = temp;
-
+                
                 if (Input.GetMouseButtonDown(0))
                 {
                     // throw yeti
@@ -139,9 +139,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 }
                 else
                 {
-                    transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f) / 3;
-                    m_Animator.SetFloat("Speed", 0.1f);
+                   transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f) / 3;
                 }
+                m_Animator.SetFloat("Speed", 0.1f);
             }
             if (Input.GetKey(KeyCode.S) && !yetiHeld)
             {
@@ -152,8 +152,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 else
                 {
                     transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 5;
-                    m_Animator.SetFloat("Speed", -0.5f);
                 }
+                m_Animator.SetFloat("Speed", -0.5f);
             }
         }
 
