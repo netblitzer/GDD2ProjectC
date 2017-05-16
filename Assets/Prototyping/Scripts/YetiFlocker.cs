@@ -164,6 +164,7 @@ public class YetiFlocker : MonoBehaviour {
 			gameObject.GetComponentsInChildren<SkinnedMeshRenderer> ()[0].enabled = false;
 			gameObject.GetComponent<ParticleSystem> ().Play ();
 			gameObject.GetComponent<CapsuleCollider> ().enabled = false;
+			gameObject.GetComponent<SphereCollider> ().enabled = false;
 			gameObject.GetComponent<Rigidbody> ().velocity = Vector3.zero;
 			agent.enabled = false;
 			dying = true;

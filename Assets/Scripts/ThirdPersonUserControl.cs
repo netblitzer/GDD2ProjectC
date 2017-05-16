@@ -12,6 +12,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     {
         [SerializeField] float m_AnimSpeedMultiplier = 1f;
 
+		public float throwForce = 10f;
+		public float throwDistMultiplier = 1f;
+
         Rigidbody m_Rigidbody;
         Animator m_Animator;
         float m_CapsuleHeight;
@@ -23,6 +26,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private bool yetiHeld;
         private bool threw;
+		private float yetiRollTimer = 0;
 		private GameObject otherYeti;
         
         private float animStart;
@@ -68,7 +72,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 						if(Vector3.Distance(Yeti.transform.position, transform.position) < 5){
 							otherYeti = Yeti;
 							Vector3 temp = transform.position;
-							temp.y += 4.2f;
+							temp.y += 6f;
 							otherYeti.transform.position = temp;
                             otherYeti.GetComponent<NavMeshAgent>().enabled = false;
                             otherYeti.GetComponent<YetiFlocker>().enabled = false;
@@ -83,14 +87,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
 
                 Vector3 temp = transform.position;
-                temp.y += 4.2f;
+                temp.y += 6f;
                 otherYeti.transform.position = temp;
                 
                 if (Input.GetMouseButtonDown(0))
                 {
                     // throw yeti
                     yetiHeld = false;
-                    Throw();
+                    Throw(otherYeti);
                 }
 
                 if (Input.GetMouseButtonDown(1))
@@ -112,14 +116,21 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 animCurrent = Time.time;
 
                 float pos = (animCurrent - animStart) / 0.5f;
-                if (pos >= 1)
+				if (otherYeti.transform.position.y < 2f)
                 {
-                    threw = false;
-                    otherYeti.GetComponent<NavMeshAgent>().enabled = true;
-                    otherYeti.GetComponent<YetiFlocker>().enabled = true;
+					yetiRollTimer += Time.deltaTime;
+
+					if (yetiRollTimer > 1) {
+						threw = false;
+						otherYeti.GetComponent<NavMeshAgent> ().enabled = true;
+						otherYeti.GetComponent<YetiFlocker> ().enabled = true;
+						otherYeti.GetComponent<Rigidbody> ().useGravity = false;
+						otherYeti.GetComponent<CapsuleCollider> ().enabled = true;
+						otherYeti.GetComponent<SphereCollider> ().enabled = false;
+					}
                 }
                 
-                otherYeti.transform.position = Vector3.Lerp(Vector3.Lerp(start, mid, pos), Vector3.Lerp(mid, end, pos), pos);
+                //otherYeti.transform.position = Vector3.Lerp(Vector3.Lerp(start, mid, pos), Vector3.Lerp(mid, end, pos), pos);
             }
 
             
@@ -157,13 +168,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
-        public void Throw()
+		public void Throw(GameObject _other)
         {
             threw = true;
             animStart = Time.time;
+			yetiRollTimer = 0;
 
-            float dist = m_Cam.transform.position.y;
-            dist = 35 - dist * 2;
+			float dist = (m_Cam.transform.position.y - 3) / 2f / throwDistMultiplier;
+			dist = throwForce - dist;
 
             start = otherYeti.transform.position;
             end = transform.position + Vector3.RotateTowards(new Vector3(0.0f, 0.0f, dist), transform.forward, (float)(2.0 * Math.PI), 1.0f);
@@ -171,6 +183,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             mid.y = 6.0f;
             m_Animator.SetTrigger("Throwing");
+			_other.GetComponent<Rigidbody> ().AddForce (gameObject.transform.forward * dist, ForceMode.Impulse);
+			_other.GetComponent<Rigidbody> ().useGravity = true;
+			otherYeti.GetComponent<CapsuleCollider> ().enabled = false;
+			otherYeti.GetComponent<SphereCollider> ().enabled = true;
         }
     }
 }
