@@ -35,8 +35,16 @@ public class TwoFace : MonoBehaviour {
 	private float chaseTimer = 0f;
     private bool sitting = false;
 
-	// Use this for initialization
-	void Start () {
+    private AudioSource source;
+    private AudioClip charge;
+    private AudioClip confuse;
+    private float chargeTimer = 0f;
+    private float chargeLimit = 0.68f;
+    private float confuseTimer = 0f;
+    private float confuseLimit = 0.68f;
+
+    // Use this for initialization
+    void Start () {
         target = null;
         chasing = false;
 
@@ -59,6 +67,10 @@ public class TwoFace : MonoBehaviour {
         agent.angularSpeed = 0;
 
         //agent.SetDestination(Nodes[curNode].Position);
+
+        source = GetComponent<AudioSource>();
+        charge = Resources.Load<AudioClip>("TwoFaced/KillCharge");
+        confuse = Resources.Load<AudioClip>("TwoFaced/Confuse");
     }
 
     void Init (float _speed, float _chaseSpeed, float _nodeWaitTime, float _reaquireTime, GameObject _target) {
@@ -111,7 +123,7 @@ public class TwoFace : MonoBehaviour {
                 } else {
 					agent.velocity *= 0.95f;
 				}
-			} else {
+            } else {
 				// now 'chasing' the target
 
 				// make sure we still have it in sights
@@ -124,7 +136,14 @@ public class TwoFace : MonoBehaviour {
 
                     chaseTimer = minChaseTime;
 
-				} else if (chaseTimer >= 0) {
+                    chargeTimer += Time.deltaTime;
+                    if (chargeTimer > chargeLimit)
+                    {
+                        source.PlayOneShot(charge, .125f);
+                        chargeTimer -= chargeLimit;
+                    }
+
+                } else if (chaseTimer >= 0) {
                     agent.SetDestination(transform.position + transform.forward * 4);
 
                     chaseTimer -= Time.deltaTime;
@@ -177,7 +196,14 @@ public class TwoFace : MonoBehaviour {
 						agent.acceleration = accel;
 						agent.angularSpeed = turnSpeed;
 					}
-				}
+
+                    confuseTimer += Time.deltaTime;
+                    if (confuseTimer > confuseLimit)
+                    {
+                        source.PlayOneShot(confuse, .125f);
+                        confuseTimer -= confuseLimit;
+                    }
+                }
 			}
 
 		}

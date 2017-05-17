@@ -31,8 +31,13 @@ public class YetiFlocker : MonoBehaviour {
 	private NavMeshAgent agent;
 	private Vector3 pos;
 
-	// Use this for initialization
-	void Start () {
+    private AudioSource source;
+    private List<AudioClip> footsteps;
+    private AudioClip death;
+    private bool deathAudio = false;
+
+    // Use this for initialization
+    void Start () {
 		trueFollowDistance = followDistance - Random.Range (0, 1f);
 
 		agent = gameObject.GetComponent<NavMeshAgent>();
@@ -41,7 +46,10 @@ public class YetiFlocker : MonoBehaviour {
 		agent.angularSpeed = turnSpeed;
 
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
-	}
+
+        source = GetComponent<AudioSource>();
+        death = Resources.Load<AudioClip>("Yeti/FollowYetiDeathScream");
+    }
 
 	float findAng (GameObject _other) {
 
@@ -139,7 +147,7 @@ public class YetiFlocker : MonoBehaviour {
 
 						agent.velocity *= 0.95f;
 					}
-				} else {
+                } else {
 					fleeUpdate ();
 				}
 
@@ -155,6 +163,8 @@ public class YetiFlocker : MonoBehaviour {
 
 			deathTimer += Time.deltaTime;
 			gameObject.GetComponent<Rigidbody> ().velocity = Vector3.zero;
+
+
 		}
 
 	}
@@ -168,6 +178,8 @@ public class YetiFlocker : MonoBehaviour {
 			gameObject.GetComponent<Rigidbody> ().velocity = Vector3.zero;
 			agent.enabled = false;
 			dying = true;
+
+            source.PlayOneShot(death, .2f);
 		}
 	}
 }

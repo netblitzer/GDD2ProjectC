@@ -39,9 +39,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private AudioSource source;
         private List<AudioClip> footsteps;
+        private AudioClip lift, throws;
         private int currentFootstep = 0;
         private float footstepTimer = 0f;
         private float footstepLimit = 0.68f;
+        private float liftTimer = 0f;
+        private float liftLimit = 0.68f;
+        private float throwsTimer = 0f;
+        private float throwsLimit = 0.68f;
+        private bool threwAudio = false;
+        private bool liftAudio = false;
 
         private void Start()
         {
@@ -70,6 +77,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/6"));
             footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/7"));
             footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/8"));
+            lift = Resources.Load<AudioClip>("Yet/Lift");
+            throws = Resources.Load<AudioClip>("Yet/Throw");
         }
 
 
@@ -79,12 +88,36 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Animator.ResetTrigger("Throwing");
             m_Animator.SetFloat("Speed", 0.0f);
 
+            if(liftAudio)
+            {
+                liftTimer += Time.deltaTime;
+                if (liftTimer > liftLimit)
+                {
+                    source.PlayOneShot(lift, .125f);
+                    liftTimer -= liftLimit;
+                    liftAudio = false;
+                }
+            }
+
+            if(threwAudio)
+            {
+                throwsTimer += Time.deltaTime;
+                if (throwsTimer > throwsLimit)
+                {
+                    source.PlayOneShot(throws, .125f);
+                    throwsTimer -= throwsLimit;
+                    threwAudio = false;
+                }
+            }
+
             if (!yetiHeld)
             {
                 if (Input.GetMouseButtonDown(0) && !threw)
                 {
+                    liftAudio = true;
+
                     // pick up yeti
-					GameObject[] Yetis = GameObject.FindGameObjectsWithTag("Yeti");
+                    GameObject[] Yetis = GameObject.FindGameObjectsWithTag("Yeti");
 					
 					foreach(GameObject Yeti in Yetis){
 						if(Vector3.Distance(Yeti.transform.position, transform.position) < 5){
@@ -113,6 +146,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     // throw yeti
                     yetiHeld = false;
                     Throw(otherYeti);
+
+                    threwAudio = true;
                 }
 
                 if (Input.GetMouseButtonDown(1))
