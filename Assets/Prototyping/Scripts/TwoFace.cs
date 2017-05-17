@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class TwoFace : MonoBehaviour {
 
@@ -286,6 +287,12 @@ public class TwoFace : MonoBehaviour {
         }
 	}
 
+    IEnumerator WaitUp()
+    {
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene("DeathScene");
+    }
+
 	void OnCollisionEnter (Collision _col) {
 
 		GameObject _other = _col.gameObject;
@@ -300,6 +307,9 @@ public class TwoFace : MonoBehaviour {
             if (!playerDead)
             {
                 source.PlayOneShot(playerDeath, .25f);
+                _other.GetComponentsInChildren<SkinnedMeshRenderer>()[0].enabled = false;
+                _other.GetComponent<ParticleSystem>().Play();
+                StartCoroutine(WaitUp());
                 playerDead = true;
             }
 		}
