@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EndTransition : MonoBehaviour {
     public static float numFol=0;
     private bool lastscreen = false;
+    private bool deathscreen = true;
 	// Use this for initialization
 	void Start () {
         if(SceneManager.GetActiveScene().name=="EndScene")
@@ -13,11 +14,15 @@ public class EndTransition : MonoBehaviour {
             GameObject.FindGameObjectWithTag("Floor").GetComponent<TextMesh>().text = "" + numFol + " Yetis saved out of 5.";
             lastscreen = true;
         }
+        else if(SceneManager.GetActiveScene().name == "DeathScene")
+        {
+            deathscreen = true;
+        }
     }
 
     private void Update()
     {
-        if(lastscreen == true)
+        if(lastscreen == true || deathscreen == true)
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
