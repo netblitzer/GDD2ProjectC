@@ -29,6 +29,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private bool threw;
 		private float yetiRollTimer = 0;
 		private GameObject otherYeti;
+        private Transform potato;
         
         private float animStart;
         private float animCurrent;
@@ -112,6 +113,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 					foreach(GameObject Yeti in Yetis){
 						if(Vector3.Distance(Yeti.transform.position, transform.position) < 5){
 							otherYeti = Yeti;
+                            potato = otherYeti.transform;
 							Vector3 temp = transform.position;
 							temp.y += 6f;
 							otherYeti.transform.position = temp;
@@ -143,9 +145,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 if (Input.GetMouseButtonDown(1))
                 {
                     // drop yeti
-                    temp = new Vector3(2.0f, 0.0f, 0.0f);
-                    temp = Vector3.RotateTowards(temp, transform.forward, (float)(2.0 * Math.PI), 0.25f);
-                    otherYeti.transform.position = transform.position - temp;
+                    //temp = new Vector3(2.0f, 0.0f, 0.0f);
+                    //temp = Vector3.RotateTowards(temp, transform.forward, (float)(2.0 * Math.PI), 0.25f);
+                    otherYeti.transform.position = potato.position;
 
                     otherYeti.GetComponent<NavMeshAgent>().enabled = true;
                     otherYeti.GetComponent<YetiFlocker>().enabled = true;
