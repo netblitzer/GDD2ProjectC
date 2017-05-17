@@ -77,8 +77,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/6"));
             footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/7"));
             footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/8"));
-            lift = Resources.Load<AudioClip>("Yet/Lift");
-            throws = Resources.Load<AudioClip>("Yet/Throw");
+            lift = Resources.Load<AudioClip>("Yeti/Lift");
+            throws = Resources.Load<AudioClip>("Yeti/Throw");
         }
 
 

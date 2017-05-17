@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class EndTransition : MonoBehaviour {
     public static float numFol=0;
     private bool lastscreen = false;
+
+    private AudioSource source;
+    private AudioClip winClip;
+
     private bool deathscreen = true;
 	// Use this for initialization
 	void Start () {
@@ -18,6 +22,9 @@ public class EndTransition : MonoBehaviour {
         {
             deathscreen = true;
         }
+
+        source = GetComponent<AudioSource>();
+        winClip = Resources.Load<AudioClip>("Yeti/PlayerWin");
     }
 
     private void Update()
@@ -49,6 +56,9 @@ public class EndTransition : MonoBehaviour {
                 }
             }
         }
+
+        source.PlayOneShot(winClip, .25f);
+
         SceneManager.LoadScene("EndScene");
 
     }
