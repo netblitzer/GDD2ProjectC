@@ -38,10 +38,13 @@ public class TwoFace : MonoBehaviour {
     private AudioSource source;
     private AudioClip charge;
     private AudioClip confuse;
+    private AudioClip playerDeath;
+
     private float chargeTimer = 0f;
     private float chargeLimit = 0.68f;
     private float confuseTimer = 0f;
     private float confuseLimit = 0.68f;
+    private bool playerDead = false;
 
     // Use this for initialization
     void Start () {
@@ -71,6 +74,7 @@ public class TwoFace : MonoBehaviour {
         source = GetComponent<AudioSource>();
         charge = Resources.Load<AudioClip>("TwoFaced/KillCharge");
         confuse = Resources.Load<AudioClip>("TwoFaced/Confuse");
+        playerDeath = Resources.Load<AudioClip>("Yeti/PlayerDeathScream");
     }
 
     void Init (float _speed, float _chaseSpeed, float _nodeWaitTime, float _reaquireTime, GameObject _target) {
@@ -291,7 +295,11 @@ public class TwoFace : MonoBehaviour {
 
 		} else if (_other.tag == "Player") {
 			// Player death
-
+            if (!playerDead)
+            {
+                source.PlayOneShot(playerDeath, .25f);
+                playerDead = true;
+            }
 		}
 	}
 }

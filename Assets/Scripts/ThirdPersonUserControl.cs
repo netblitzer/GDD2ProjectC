@@ -90,24 +90,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             if(liftAudio)
             {
-                liftTimer += Time.deltaTime;
-                if (liftTimer > liftLimit)
-                {
-                    source.PlayOneShot(lift, .125f);
-                    liftTimer -= liftLimit;
-                    liftAudio = false;
-                }
+                source.PlayOneShot(lift, .25f);
+                liftAudio = false;
             }
 
             if(threwAudio)
             {
-                throwsTimer += Time.deltaTime;
-                if (throwsTimer > throwsLimit)
-                {
-                    source.PlayOneShot(throws, .125f);
-                    throwsTimer -= throwsLimit;
-                    threwAudio = false;
-                }
+                source.PlayOneShot(throws, .25f);
+                threwAudio = false;
             }
 
             if (!yetiHeld)
