@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -36,6 +37,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 end;
         private Vector3 mid;
 
+        private AudioSource source;
+        private List<AudioClip> footsteps;
+        private int currentFootstep = 0;
+        private float footstepTimer = 0f;
+        private float footstepLimit = 0.68f;
+
         private void Start()
         {
             yetiHeld = false;
@@ -52,6 +59,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 
             distance = new Vector3(0.1f, 0.0f, 0.0f);
+
+            source = GetComponent<AudioSource>();
+            footsteps = new List<AudioClip>();
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/1"));
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/2"));
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/3"));
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/4"));
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/5"));
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/6"));
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/7"));
+            footsteps.Add(Resources.Load<AudioClip>("Yeti/Footsteps/8"));
         }
 
 
@@ -154,6 +172,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                    transform.position += Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.25f) / 3;
                 }
                 m_Animator.SetFloat("Speed", 0.1f);
+
+                footstepTimer += Time.deltaTime;
+                if(footstepTimer > footstepLimit)
+                {
+                    source.PlayOneShot(footsteps[currentFootstep], .125f);
+                    currentFootstep++;
+                    if (currentFootstep > 7) currentFootstep = 0;
+                    footstepTimer -= footstepLimit;
+                }
             }
             if (Input.GetKey(KeyCode.S) && !yetiHeld)
             {
@@ -165,7 +192,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 {
                     transform.position -= Vector3.RotateTowards(distance, transform.forward, (float)(2.0 * Math.PI), 0.1f) / 5;
                 }
-                m_Animator.SetFloat("Speed", -0.5f);
+                m_Animator.SetFloat("Speed", 0.5f);
+
+                footstepTimer += Time.deltaTime;
+                if (footstepTimer > footstepLimit)
+                {
+                    source.PlayOneShot(footsteps[currentFootstep], .125f);
+                    currentFootstep++;
+                    if (currentFootstep > 7) currentFootstep = 0;
+                    footstepTimer -= footstepLimit;
+                }
             }
         }
 
